@@ -1,0 +1,14 @@
+mixin header(data)
+    header.header-wrap
+        .container
+            .header
+                a.header__logo
+                    picture
+                        img(src="static/img/content/logo.png" srcset="static/img/content/logo@2x.png 2x")
+                .header__inner-wrap
+                    nav.header__nav
+                        a(href='#').header__nav-link Catalog
+                        a(href='#').header__nav-link About
+                        a(href='#').header__nav-link Contacts
+                    a(href='#').header__btn.btn Sign up
+

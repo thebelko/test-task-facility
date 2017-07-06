@@ -1,0 +1,28 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head.pug
+    include ../components/header/header
+    include ../components/promo-block/promo-block
+    include ../components/how-it-works/how-it-works
+    include ../components/popup/popup
+
+    head
+        +head(head.defaults)
+    body.page
+
+        +header()
+        +promo-block()
+        +how-it-works()
+        .overlay
+        +popup()
+
+        |%=symbols=%
+
+
+
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

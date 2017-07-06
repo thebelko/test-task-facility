@@ -1,0 +1,41 @@
+.promo-block-wrap {
+    min-height: 760px;
+    background-image: url(../img/content/bg-doge.png);
+    background-position: center;
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+        background-image: url(../img/content/bg-doge@2x.png);
+        background-size: 1920px 760px;
+
+    }
+    @media (max-width: 1023px) {
+        min-height: 600px;
+    }
+    @media (max-width: 767px) {
+        min-height: auto;
+    }
+}
+
+.promo-block {
+    padding-top: 260px;
+    margin-bottom: 75px;
+    @media (max-width: 1023px) {
+        padding-top: 200px;
+    }
+    @media (max-width: 767px) {
+        padding: 40px 0;
+    }
+    &__title {
+        font-size: em(72);
+        margin: 0;
+        margin-bottom: 78px;
+        text-align: center;
+        @media (max-width: 767px) {
+            font-size: em(36);
+            margin-bottom: 30px;
+        }
+    }
+    &__text {
+        text-align: center;
+        font-size: em(21);
+    }
+}

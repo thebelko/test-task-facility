@@ -1,0 +1,47 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    min-width: 320px;
+    font-family: $custom-font;
+    font-size: 12px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.page {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1024px;
+    padding: 0 22px;
+    margin: 0 auto;
+
+    &--content-block {
+        padding: 0;
+    }
+}
+
+.btn {
+    padding: 4px 38px;
+    font-size: em(20);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: $btn-bg;
+    border-radius: 5px;
+    transition: .3s;
+    &:hover {
+        background-color: $btn-bg-hover;
+    }
+    &:active {
+        background-color: $btn-bg-active;
+    }
+}

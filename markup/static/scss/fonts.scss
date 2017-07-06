@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PT Sans Caption';
+    src: url('../fonts/PT-Sans-Caption.woff2') format('woff2'),
+         url('../fonts/PT-Sans-Caption.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    }
+
+$custom-font: 'PT Sans Caption', Helvetica, Arial, sans-serif;

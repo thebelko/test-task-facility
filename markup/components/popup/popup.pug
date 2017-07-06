@@ -1,0 +1,22 @@
+mixin popup(data)
+    section.popup
+        button(type='button').popup__close-btn close popup
+        form(method='post' action='').form
+            .form__title Sign up to get all features
+            .form__block
+                label(for='username').form__label Username
+                input(type='text' name='username' id='username' placeholder='Doge').form__input
+            .form__block
+                label(for='email').form__label E-mail
+                input(type='email' name='email' id='email' placeholder='test@gmail.com').form__input
+            .form__block
+                label(for='password').form__label Password
+                input(type='password' name='password' id='password').form__input
+            .form__bottom-wrap
+                button(type='submit').form__btn.btn Sign up
+                .form__agree-wrap
+                    input(type='checkbox' name='agree-with-terms' id='agree-with-terms')
+                    label(for='agree-with-terms') I agree with <a href='#'>terms and conditions</a>
+
+
+
